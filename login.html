@@ -1,98 +1,113 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <!--<meta charset="utf-8" />-->
+    <meta charset="utf-8" />
+    <title>DL AppStudio - Login</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <link href="Content/bootstrap.min.css" rel="stylesheet" />
-    <script src="Scripts/bootstrap.bundle.min.js"></script>
-    <script src="Scripts/bootstrap.min.js"></script>
-
-    <script type="text/javascript" src="/js/fetch.js" defer></script>
-    <title></title>
+    <meta name="description" content="" />
+    <meta name="author" content="DL Appstudio" />
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap Icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+    <!-- SimpleLightbox plugin CSS-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
 </head>
-<body>
+<body id="page-top">
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">
-            <img src="/src/logo/D-OneT.png" width="30" height="30" class="d-inline-block align-top" alt="">
-            DarkOne
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Products
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <p>DarkOne</p>
-                                <a class="dropdown-item" href="#">Product Specifications</a>
-                                <a class="dropdown-item" href="#">Requirements</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Request</a>
-                            </div>
-                            <div class="col-sm-4">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Administrators</a>
-                </li>
-            </ul>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav" style="background-color: rgba(255, 255, 255, 0.95); box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="index.html" style="color: #212529;"><img src="/src/logo/dl-dark.png" width="30" height="30" class="d-inline-block align-top" alt="">  DL AppStudio</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html#page-top" style="color: #212529;">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#services" style="color: #212529;">Soluções</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#support" style="color: #212529;">Suporte</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#portfolio" style="color: #212529;">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#about" style="color: #212529;">Sobre nós</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact" style="color: #212529;">Fale Connosco</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="login.html" style="color: #212529;">Login</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
-    <div class="text-bg-dark text-center">
-        <h1>Welcome to DarkOne</h1>
-        <p>Remote management interface for businesses</p>
-        <br />
-    </div>
-
-
-    <br />
-
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-6">
-                <div class="card mt-5">
-                    <div class="card-header">
-                        <h4>Login</h4>
+    <!-- Login Section-->
+    <section class="page-section" style="padding-top: 120px; min-height: 100vh; background-color: #f8f9fa;">
+        <div class="container px-4 px-lg-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 col-sm-8">
+                    <!-- Page Title -->
+                    <div class="text-center mb-4">
+                        <h3 class="text-dark mt-0 mb-3">Members Login</h3>
+                        <hr class="divider" style="max-width: 150px; margin: 0 auto;" />
                     </div>
-                    <div class="card-body">
-                        <form method="get" id="frmlogin">
-                            <div class="mb-3">
-                                <label for="txtUsername" class="form-label">Username</label>
-                                <input type="text" class="form-control" id="txtUsername" placeholder="Enter username" >
-                            </div>
-                            <div class="mb-3">
-                                <label for="txtPassword" class="form-label">Password</label>
-                                <input type="password" class="form-control" id="txtPassword" placeholder="Password" >
-                            </div>
-                            <button type="submit" class="btn btn-primary">Login</button>
 
-                        </form>
+                    <!-- Login Form Container -->
+                    <div class="card shadow-sm" style="border-radius: 8px; border: none;">
+                        <div class="card-body p-4">
+                            <!-- Social Login Buttons -->
+                            <div class="mb-4">
+                                <div class="d-grid gap-2">
+                                    <button type="button" class="btn btn-outline-danger" style="border-radius: 6px;">
+                                        <i class="bi bi-google me-2"></i>Use Google Account
+                                    </button>
+                                    <button type="button" class="btn btn-outline-primary" style="border-radius: 6px;">
+                                        <i class="bi bi-facebook me-2"></i>Use Facebook
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <div class="text-center mb-3">
+                                <small class="text-muted">or</small>
+                            </div>
+                            
+                            <form method="get" id="frmlogin">
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" id="txtEmail" placeholder="Your Email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="password" class="form-control" id="txtPassword" placeholder="Your Password" required>
+                                </div>
+                                <div class="d-grid mb-3">
+                                    <button type="submit" class="btn btn-primary" style="border-radius: 6px;">Login</button>
+                                </div>
+                                <div class="text-center">
+                                    <small><a href="#" class="text-primary" style="text-decoration: underline;">Lost your password?</a></small>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Instructional Text -->
+                    <div class="mt-4">
+                        <p class="text-muted text-center small" style="max-width: 100%; margin: 0 auto;">
+                            To become a member, you need to purchase at least one template or a Premium plan. After your payment is complete, we'll automatically create an account with your email so you can log in and start building or downloading right away!
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
+    <!-- Footer-->
+    <footer class="bg-light py-5">
+        <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2025 - DL AppStudio LDA</div></div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- SimpleLightbox plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
 </body>
 </html>
